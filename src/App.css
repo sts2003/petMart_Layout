@@ -1,38 +1,557 @@
-.App {
-  text-align: center;
-}
+@import "./styles/reset.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.App__main {
+  width: 100%;
+  height: 12800;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App__main .main__RsWrapper {
+  width: 1360px;
+  /* height: 100%; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App__main .main__image {
+  width: 100%;
+  height: 100vh;
+
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2Fmain.png?alt=media&token=04dfc88c-ff63-40e5-aa09-978caf511ace");
+  background-size: cover;
+
+  /* background-attachment: initial; */
+}
+
+.App__main .main__RsWrapper .main__slide {
+  width: 100%;
+  height: 800px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.App__main .main__RsWrapper .main__slide .slide__text {
+  font-size: 36px;
+  color: black;
+
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+.App__main .main__RsWrapper .main__slide .slide__images {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App__main .main__RsWrapper .main__slide .slide__images img {
+  width: 325px;
+  height: 325px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App__main .main__graph {
+  width: 100%;
+  height: 840px;
+
+  background-color: #032950;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__main .main__graph .graph__top,
+.graph__bottom {
+  width: 1360px;
+  /* width: 742px;
+  height: 124px; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 48px;
+}
+
+.App__main .main__graph .graph__top .graph__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* .App__main
+  .main__RsWrapper
+  .main__graph
+  .graph__top
+  .graph__title
+  .title__bar
+  ::before {
+  position: absolute;
+  width: 388px;
+  height: 53px;
+
+  background-color: #ffcb08;
+} */
+
+.App__main .main__graph .graph__top img {
+  width: 133px;
+  height: 117px;
+
+  background-size: cover;
+}
+
+.App__main .main__banner {
+  width: 100%;
+  height: 430px;
+
+  background-color: #eeeeee;
+  color: #222222;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__main .main__banner .banner__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__main .main__banner .banner__text1 {
+  font-size: 48px;
+  margin-top: 80px;
+}
+.App__main .main__banner .banner__text2 {
+  font-size: 24px;
+  margin-top: 40px;
+}
+
+.App__main .main__banner .banner__images {
+  width: 1360px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 80px;
+  margin: 50px 0;
+}
+
+.App__main .main__RsWrapper .main__startBanner {
+  width: 100%;
+  height: 820px;
+
+  margin: 200px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App__main .main__RsWrapper .main__startBanner .startBanner__title {
+  width: 270px;
+  height: 350;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  color: black;
+  font-size: 72px;
+
+  margin-bottom: 490px;
+}
+.App__main .main__RsWrapper .main__startBanner .startBanner__title div {
+  line-height: 90px;
+}
+
+.App__main
+  .main__RsWrapper
+  .main__startBanner
+  .startBanner__title
+  .title__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.App__main
+  .main__RsWrapper
+  .main__startBanner
+  .startBanner__title
+  .title__wrapper {
+  color: #ffcb08;
+}
+
+.App__main .main__RsWrapper .main__startBanner .startBanner__top {
+  width: 900px;
+
+  background-size: cover;
+
+  margin-bottom: 14px;
+}
+
+.App__main .main__RsWrapper .main__startBanner .startBanner__bot {
+  width: 900px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  background-size: cover;
+}
+
+.App__main .main__RsWrapper .main__whyPetMart {
+  width: 100%;
+  height: 4930px;
+
+  margin: 120px 0;
+  color: #222222;
+}
+
+.App__main .main__RsWrapper .main__whyPetMart .petMart__images {
+  height: 500px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
+
+  margin-bottom: 120px;
+}
+
+.App__main
+  .main__RsWrapper
+  .main__whyPetMart
+  .petMart__images
+  .petMart__image__img {
+  width: 670px;
+  height: 500px;
+
+  background-size: cover;
+}
+
+.App__main .main__request {
+  width: 100%;
+  height: 600px;
+}
+
+.App__main .main__request img {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+
+.App__main .main__story {
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2FbackgroundImage.png?alt=media&token=88a7130f-34e8-4088-a99d-541506f4498a");
+  background-size: cover;
+
+  width: 100%;
+  height: 1300px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App__main .main__story .story__top {
+  width: 1360px;
+
+  margin: 100px 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.App__main .main__story .story__top .story__left {
+  width: 785px;
+  height: 420px;
+
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.App__main .main__story .story__top .story__left .left__1 {
+  font-size: 72px;
+
+  line-height: 90px;
+}
+
+.App__main .main__story .story__top .story__left .left__1 :nth-child(2) {
+  color: #ffcb08;
+}
+
+.App__main .main__story .story__top .story__left .left__2 {
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.App__main .main__story .story__top .story__left .left__2 :nth-child(2) {
+  color: #ffcb08;
+}
+
+.App__main .main__story .story__top .story__right {
+  width: 785px;
+  height: 420px;
+
+  background-size: cover;
+}
+
+.App__main .main__story .story__mid {
+  width: 1360px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App__main .main__story .story__mid .story__mid__1,
+.story__mid__2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.App__main .main__story .story__mid .story__mid__1 {
+  margin-bottom: 50px;
+}
+
+.App__main .main__story .story__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin: 100px 0;
+
+  width: 440px;
+  height: 60px;
+
+  border: 1px solid #fff;
+}
+
+.App__main .main__price {
+  width: 100%;
+  height: 1130px;
+
+  color: #222222;
+}
+
+.App__main .main__price .price__title {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 48px;
+
+  margin: 100px 0;
+}
+
+.App__main .main__price .price__table .table__top {
+  background-color: #ffcb08;
+  height: 84px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  color: #fff;
+  font-size: 24px;
+}
+
+.App__main .main__price .price__table .table__datum {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table__top .table__menus1 {
+  width: 10%;
+  height: 84px;
+  border-right: 1px solid #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__top .table__menus2 {
+  width: 15%;
+  height: 84px;
+  border-right: 1px solid #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__top .table__menus3 {
+  width: 45%;
+  height: 84px;
+  border-right: 1px solid #fff;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__top .table__menus4 {
+  width: 30%;
+  height: 84px;
+  border-right: 1px solid #fff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table__top .table__menus4 .table__columnTop {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  height: 50%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__top .table__menus4 .table__column {
+  width: 100%;
+  height: 42px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1px solid #fff;
+}
+
+.table__top .table__menus4 .table__column div {
+  width: calc(100% / 3);
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  border-right: 1px solid #fff;
+}
+
+.table__datum .datum__dataArea1 {
+  width: 10%;
+  height: 84px;
+  border: 1px solid #cccccc;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__datum .datum__dataArea2 {
+  width: 15%;
+  height: 84px;
+  border: 1px solid #cccccc;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__datum .datum__dataArea3 {
+  width: 45%;
+  height: 84px;
+  border: 1px solid #cccccc;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__datum .datum__dataArea4 {
+  width: 30%;
+  height: 84px;
+  border: 1px solid #cccccc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__datum .datum__dataArea4 .dataArea__data {
+  height: 50%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__datum .datum__dataArea4 .dataArea__data :nth-child(2) {
+  border-right: "1px solid #cccccc";
+}
+
+.mid__text {
+  margin-top: 10px;
+}
+
+.petMart__desc {
+  font-size: 18px;
+
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.petMart__descArea {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.petMart__descArea div {
+  margin-top: 10px;
 }

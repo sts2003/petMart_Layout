@@ -2,7 +2,7 @@
 
 .App__main {
   width: 100%;
-  height: 12800;
+  height: auto;
 
   display: flex;
   flex-direction: column;
@@ -22,6 +22,8 @@
   background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2Fmain.png?alt=media&token=04dfc88c-ff63-40e5-aa09-978caf511ace");
   background-size: cover;
 
+  background-position: center;
+
   /* background-attachment: initial; */
 }
 
@@ -34,6 +36,12 @@
   justify-content: center;
   align-items: flex-start;
 }
+.App__main .main__RsWrapper .slide__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 .App__main .main__RsWrapper .main__slide .slide__text {
   font-size: 36px;
   color: black;
@@ -41,7 +49,13 @@
   margin-left: 10px;
   margin-bottom: 50px;
 }
+.App__main .main__RsWrapper .main__slide .slide__bar {
+  border-bottom: 5px solid #ffcb08;
+  margin-bottom: 30px;
+  margin-left: 30px;
 
+  width: 510px;
+}
 .App__main .main__RsWrapper .main__slide .slide__images {
   width: 100%;
 
@@ -71,6 +85,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  font-size: 48px;
+}
+
+.App__main .main__graph .graph__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.App__main .main__graph .graph__bottom {
+  margin-top: 100px;
 }
 
 .App__main .main__graph .graph__top,
@@ -83,13 +109,39 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  font-size: 48px;
 }
 
-.App__main .main__graph .graph__top .graph__title {
+.App__main .main__graph .graph__top,
+.graph__bottom .graph__graph {
+  width: 50%;
+}
+
+.App__main .main__graph .graph__top .graph__bigTitle,
+.graph__title {
   display: flex;
   flex-direction: row;
+}
+
+.App__main .main__graph .graph__top .graph__bigTitle,
+.graph__title .title__bar {
+  margin-left: 50px;
+}
+
+.App__main .main__graph .graph__top .graph__bigTitle,
+.graph__title .title__bar ::before {
+  position: absolute;
+  width: 10%;
+  height: 30;
+  content: "";
+
+  background-color: #ffcb08;
+}
+
+.App__main .main__graph .graph__top .graph__bigTitle {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
 }
@@ -113,6 +165,11 @@
   height: 117px;
 
   background-size: cover;
+}
+
+.App__main .main__graph .graph__bottom .graph__table {
+  width: 50%;
+  height: 100%;
 }
 
 .App__main .main__banner {
@@ -221,24 +278,84 @@
   background-size: cover;
 }
 
-.App__main .main__RsWrapper .main__whyPetMart {
+.App__main .main__RsWrapper .main__whyPetmart {
   width: 100%;
-  height: 4930px;
+  height: auto;
 
-  margin: 120px 0;
+  color: #222222;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 130px 0;
+}
+.App__main .main__RsWrapper .main__whyPetmart .whyPetMart__title {
+  font-size: 72px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App__main
+  .main__RsWrapper
+  .main__whyPetmart
+  .whyPetMart__title
+  .whyPetMart__title__desc {
+  font-size: 24px;
+
+  margin-bottom: 100px;
+}
+
+.App__main .main__RsWrapper .main__whyPetmart .whyPetMart__title div {
   color: #222222;
 }
 
-.App__main .main__RsWrapper .main__whyPetMart .petMart__images {
-  height: 500px;
-
+.App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-size: cover;
+}
+.App__main .main__RsWrapper .main__whyPetmart .sticker__Area {
+  width: 100%;
 
-  margin-bottom: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.petMart__desc {
+  font-size: 18px;
+
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.petMart__descArea {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.petMart__descArea div {
+  margin-top: 10px;
+}
+.petmart__imgs img {
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+  background-size: cover;
+}
+
+/* .App__main .main__RsWrapper .main__whyPetMart .petMart__images {
+  width: 300px;
+  height: 500px;
 }
 
 .App__main
@@ -246,11 +363,12 @@
   .main__whyPetMart
   .petMart__images
   .petMart__image__img {
-  width: 670px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
 
+  border-radius: 50%;
   background-size: cover;
-}
+} */
 
 .App__main .main__request {
   width: 100%;
@@ -359,9 +477,27 @@
 
 .App__main .main__price {
   width: 100%;
-  height: 1130px;
+  height: 890px;
+
+  margin: 100px 0;
 
   color: #222222;
+}
+
+.App__main .main__price .price__table img {
+  width: 100%;
+  height: auto;
+}
+
+.App__main .main__price .price__bottom {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 70px;
 }
 
 .App__main .main__price .price__title {
@@ -373,185 +509,17 @@
   justify-content: center;
 
   font-size: 48px;
-
-  margin: 100px 0;
-}
-
-.App__main .main__price .price__table .table__top {
-  background-color: #ffcb08;
-  height: 84px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  color: #fff;
-  font-size: 24px;
-}
-
-.App__main .main__price .price__table .table__datum {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.table__top .table__menus1 {
-  width: 10%;
-  height: 84px;
-  border-right: 1px solid #fff;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__top .table__menus2 {
-  width: 15%;
-  height: 84px;
-  border-right: 1px solid #fff;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__top .table__menus3 {
-  width: 45%;
-  height: 84px;
-  border-right: 1px solid #fff;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__top .table__menus4 {
-  width: 30%;
-  height: 84px;
-  border-right: 1px solid #fff;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.table__top .table__menus4 .table__columnTop {
-  border-bottom: 1px solid #fff;
-  width: 100%;
-  height: 50%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__top .table__menus4 .table__column {
-  width: 100%;
-  height: 42px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  border-right: 1px solid #fff;
-}
-
-.table__top .table__menus4 .table__column div {
-  width: calc(100% / 3);
-  height: 100%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-
-  border-right: 1px solid #fff;
-}
-
-.table__datum .datum__dataArea1 {
-  width: 10%;
-  height: 84px;
-  border: 1px solid #cccccc;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__datum .datum__dataArea2 {
-  width: 15%;
-  height: 84px;
-  border: 1px solid #cccccc;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__datum .datum__dataArea3 {
-  width: 45%;
-  height: 84px;
-  border: 1px solid #cccccc;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__datum .datum__dataArea4 {
-  width: 30%;
-  height: 84px;
-  border: 1px solid #cccccc;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__datum .datum__dataArea4 .dataArea__data {
-  height: 50%;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.table__datum .datum__dataArea4 .dataArea__data :nth-child(2) {
-  border-right: "1px solid #cccccc";
 }
 
 .mid__text {
   margin-top: 10px;
 }
 
-.petMart__desc {
+.table__underTitle {
+  width: 100%;
   font-size: 18px;
-
-  margin-top: 10px;
-  line-height: 20px;
-}
-
-.petMart__descArea {
-  width: 50%;
-
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-}
-
-.petMart__descArea div {
-  margin-top: 10px;
 }

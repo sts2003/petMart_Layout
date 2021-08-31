@@ -4,6 +4,11 @@ import "../styles/MainHeader.css";
 const Main1 = () => {
   return (
     <div className="main__header">
+      <div className="media__header">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       <div className="header__RsWrapper">
         <img
           className="main__logo"

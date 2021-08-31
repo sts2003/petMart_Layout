@@ -7,19 +7,27 @@ const MainFooter = () => {
       <div className="footer__RsWrapper">
         <div className="footer__fir">
           <div>주식회사 선진펫</div>
+
           <div>
             <div>주소 : 경상북도 청도군 청도읍 송읍길 79 주식회사 선진펫</div>
+            <div className="fir__firDiv">
             <div style={{ margin: `0 50px` }}>대표이사 : 이권형</div>
             <div>대표번호 : 053-982-1550</div>
-          </div>
-          <div>
-            <div style={{ marginRight: `10px` }}>팩스 : 053-986-1545</div>
-            <div>통신판매업신고번호 : 제2012-대구동구-0113호</div>
+            </div>
           </div>
 
           <div>
-            <div>사업자등록번호 : 502-86-16211</div>
+            <div className="fir__seciv">
+            <div style={{ marginRight: `10px` }}>팩스 : 053-986-1545</div>
+            <div>통신판매업신고번호 : 제2012-대구동구-0113호</div>
+            </div>
+          </div>
+
+          <div>
+            <div className="fir__thiDiv">
+            <div>사업자등록번호 : 502-86-16211</div>
             <div style={{ fontWeight: `600` }}>[사업자정보확인]</div>
+            </div>
           </div>
 
           <div style={{ margin: `10px 0` }}>

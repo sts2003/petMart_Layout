@@ -104,9 +104,11 @@ const App = () => {
       <div className="main__banner">
         <div className="banner__texts">
           <div className="banner__text1">펫마트 입점 브랜드</div>
+          <div className="banner__bottom">
           <div className="banner__text2">
-            펫마트는 약 700여개의 유명, 신규브랜드와 5000여개의 품목을
-            취급하고있습니다.
+            펫마트는 약 700여개의 유명, 신규브랜드와 
+          </div>
+          <div className="banner__text2">5000여개의 품목을 취급하고있습니다.</div>
           </div>
         </div>
         <div className="banner__images">
@@ -134,7 +136,7 @@ const App = () => {
       <div className="main__RsWrapper">
         <div className="main__startBanner">
           <div className="startBanner__title">
-            <div>지금!</div>
+            <div>지금! </div>
             <div className="title__wrapper">
               <div className="title__color">펫마트</div>
               <div style={{ color: `black` }}>를</div>
@@ -143,13 +145,11 @@ const App = () => {
               <div className="title__color">시작</div>
               <div style={{ color: `black` }}>해야</div>
             </div>
-            <div>되는 이유</div>
+            <div className="title__bottom">되는 이유</div>
           </div>
           <div className="startBanner__images">
             <div className="startBanner__top">
-              <img
-                src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2FbannerTop.png?alt=media&token=477289a2-95e1-429f-ad20-a58b85b354db`}
-              />
+              
             </div>
             <div className="startBanner__bot">
               <div className="startBanner__left">
@@ -391,6 +391,24 @@ const App = () => {
       </div>
       <div className="main__RsWrapper">
         <div className="main__price">
+          <div className="media__table">
+            <div className="media__title">창업문의</div>
+            <div className="media__top">
+              <div>펫마트의 전문 창업상담사 항시대기 1:1문의로</div>
+              <div>편안하고 빠른 안내를 받아보세요</div>
+            </div>
+            <div className="media__mid">
+              <div className="media__mid__top">
+                <div className="media__desc">연락처</div>
+                <div>1588-1684</div>
+              </div>
+              <div>
+                <div>E-Mail</div>
+                <div>ebajslee@sunjinpet.co.kr</div>
+              </div>
+            </div>
+            <div className="media__bot">신청하기</div>
+          </div>
           <div className="price__title">개설비용</div>
           <div className="price__table">
             <img

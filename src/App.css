@@ -218,7 +218,7 @@
 } */
 
 .App__main .main__graph .graph__top .graph__bigTitle {
-  width: 50%;
+
 
   display: flex;
   flex-direction: column;
@@ -271,6 +271,12 @@
   align-items: center;
   justify-content: center;
 }
+.banner__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
 
 .App__main .main__banner .banner__text1 {
   font-size: 48px;
@@ -306,19 +312,20 @@
 }
 
 .App__main .main__RsWrapper .main__startBanner .startBanner__title {
-  width: 270px;
-  height: 350;
+  width: 400px;
+  height: 350px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-
+  
   color: black;
   font-size: 72px;
-
+  
   margin-bottom: 490px;
 }
+
 .App__main .main__RsWrapper .main__startBanner .startBanner__title div {
   line-height: 90px;
 }
@@ -340,8 +347,9 @@
 }
 
 .App__main .main__RsWrapper .main__startBanner .startBanner__top {
-  width: 900px;
-
+  width: auto;
+  height: 300px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2FbannerTop.png?alt=media&token=477289a2-95e1-429f-ad20-a58b85b354db");
   background-size: cover;
 
   margin-bottom: 14px;
@@ -625,4 +633,804 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.media__table {
+  display: none;
+}
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+/******************************************************************************************************************************************************************************/
+@media (max-width: 700px){
+  .App__main {
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .App__main .main__image {
+    width: 100%;
+    height: 100vh;
+  
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2Fmobile%20main.png?alt=media&token=cf59a969-3000-4d7b-a8b4-ff2b189e85f8") !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .App__main .main__RsWrapper {
+     width: auto;
+  }
+
+  .App__main .main__RsWrapper .main__slide {
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: flex-start !important;
+
+    margin-top: 50px !important;
+  }
+
+  .App__main .main__RsWrapper .slide__top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  .App__main .main__RsWrapper .main__slide .slide__text {
+    font-size: 18px;
+    color: black;
+  
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+
+  .App__main .main__RsWrapper .main__slide .slide__bar {
+    border-bottom: 2px solid #ffcb08 !important;
+    margin-top: 15px !important;
+    margin-left: 10px !important;
+  
+    width: 187px;
+  }
+
+  .App__main .main__RsWrapper .main__slide .slide__images {
+    width: 100%;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-around !important;
+  }
+
+  .App__main .main__RsWrapper .main__slide .slide__images img:nth-child(2) {
+    margin-left: 20px !important;
+  }
+  .App__main .main__RsWrapper .main__slide .slide__images img:nth-child(3) {
+    display: none !important;
+  }
+  .App__main .main__RsWrapper .main__slide .slide__images img:nth-child(4) {
+    display: none !important;
+  }
+
+  
+  .App__main .main__RsWrapper .main__slide .slide__images img {
+    width: 159px;
+    height: 159px;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
+  .table__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+  }
+
+  .App__main .main__graph {
+    width: 100%;
+    height: 890px;
+  
+    background-color: #032950;
+  
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 18px;
+    margin-top: 50px !important;
+  }
+  
+  .App__main .main__graph .graph__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+ .App__main .main__graph .graph__top img{
+    display: none !important;
+  }
+
+  .App__main .main__graph .graph__bottom {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App__main .main__graph .graph__bottom .graph__table{
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.App__main .main__graph .graph__top,
+.graph__bottom .graph__graph {
+  width: 100% !important;
+}
+
+.App__main .main__graph .graph__bottom .graph__graph {
+  margin-bottom: 30px;
+}
+
+  .table__main {
+    width: 330px !important;
+
+    border-top: 1px solid #eeeeee;
+    border-bottom: 2px solid #eeeeee;
+  }
+
+  .table__main ul :nth-child(2){
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }
+
+  .table__main li{
+    margin: 14px 0;
+    padding: 0 10px;
+  }
+
+  .table__main .table__main__li__title1 {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table__main .table__main__li__title2 {
+    width: 30%;
+  
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .table__main .table__main__li__title3 {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .table__main .table__main__li__1 {
+    width: 30%;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .table__main .table__main__li__2 {
+    width: 30%;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .table__main .table__main__li__3 {
+    width: 30%;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  
+  .App__main .main__graph .graph__top,
+  .graph__bottom {
+    width: auto;
+      
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .App__main .main__graph .graph__top, .graph__bottom .graph__graph img{
+    width: 330px;
+}
+  
+  .App__main .main__graph .graph__top,
+  .graph__bottom .graph__graph img{
+ 
+    background-size: cover;
+  }
+  
+  .App__main .main__graph .graph__top .graph__bigTitle,
+  .graph__title {
+    display: flex;
+    flex-direction: row;
+  }
+
+ 
+  
+  .App__main .main__graph .graph__top .graph__bigTitle,
+  .graph__title .title__bar {
+    margin-left: 20px;
+  }
+  
+  .App__main .main__graph .graph__top .graph__bigTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .App__main .main__graph .graph__top img {
+    width: 133px;
+    height: 117px;
+  
+    background-size: cover;
+  }
+  
+  .App__main .main__graph .graph__bottom .graph__table ul{
+    width: 50%;
+    height: 100%;
+
+    font-size: 14px !important;
+  }
+  
+  .App__main .main__banner {
+    width: 100%;
+    height: 430px;
+  
+    background-color: #eeeeee;
+    color: #222222;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App__main .main__banner .banner__texts {
+    margin-right: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .banner__bottom {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    line-height: 0px !important;
+    padding: 20px 0;
+  }
+  
+  .App__main .main__banner .banner__text1 {
+    font-size: 18px;
+    margin-top: 80px;
+  }
+  .App__main .main__banner .banner__text2 {
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  
+  .App__main .main__banner .banner__images {
+    width: auto;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 80px;
+    margin: 50px 0;
+  }
+   .App__main .main__banner .banner__images img{
+     width: 108px;
+   }
+   .App__main .main__banner .banner__images :nth-child(4) {
+     display: none !important
+   }
+   .App__main .main__banner .banner__images :nth-child(5) {
+     display: none !important
+   }
+   .App__main .main__banner .banner__images :nth-child(6) {
+     display: none !important
+   }
+  
+  .App__main .main__RsWrapper .main__startBanner {
+    width: 100%;
+    height: auto !important;
+  
+    margin: 0 !important;
+  
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .App__main .main__RsWrapper .main__startBanner .startBanner__title {
+    width: 100% !important;
+    height: 100px !important;
+  
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+    justify-content: flex-start;
+  
+    color: black;
+    font-size: 24px;
+  
+    margin-bottom: 0px !important;
+  }
+  .App__main .main__RsWrapper .main__startBanner .startBanner__title div {
+    line-height: 30px !important;
+  }
+  
+  .App__main
+    .main__RsWrapper
+    .main__startBanner
+    .startBanner__title
+    .title__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .App__main
+    .main__RsWrapper
+    .main__startBanner
+    .startBanner__title
+    .title__wrapper {
+    color: #ffcb08;
+  }
+  
+  .App__main .main__RsWrapper .main__startBanner .startBanner__top {
+    width: 330px;
+    height: 360px;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2Fmobile%20startBanner.png?alt=media&token=92b7fae7-c9d1-4b42-bbcf-a6fc85a0e6e1") !important;
+    background-size: cover;
+  
+    margin-bottom: 14px;
+  }
+  
+  .App__main .main__RsWrapper .main__startBanner .startBanner__bot {
+    display: none !important;
+  }
+  
+  .App__main .main__RsWrapper .main__whyPetmart {
+    width: 100%;
+    height: auto;
+  
+    color: #222222;
+  
+    display: flex;
+    flex-direction: column;
+  
+    margin: 130px 0;
+  }
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetMart__title {
+    font-size: 24px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .whyPetMart__title ::before{
+    position: absolute;
+    background-color: #ffcb08;
+  }
+  .App__main
+    .main__RsWrapper
+    .main__whyPetmart
+    .whyPetMart__title
+    .whyPetMart__title__desc {
+      font-size: 14px;
+      margin-top: 30px;
+      margin-bottom: 100px;
+  }
+  
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetMart__title div {
+    color: #222222;
+  }
+  
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__2,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__3,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__4,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__5,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__6,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__7,
+  .App__main .main__RsWrapper .main__whyPetmart .whyPetmart__images .whyPetmart__8
+  {
+      display: none !important;
+  }
+
+  .App__main .main__RsWrapper .main__whyPetmart .sticker__Area div{
+   display: none !important;
+  }
+  
+  
+  
+  .petMart__desc {
+    font-size: 18px;
+  
+    margin-top: 10px;
+    line-height: 20px;
+  }
+  
+  .petMart__desc .desc__title{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  
+    margin: 20px 0;
+  }
+  
+  .petMart__desc .desc__desc div{
+    font-size: 14px !important;
+  
+    line-height: 20px !important;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+   .petmart__imgs {
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .petmart__imgs img {
+    width: 300px;
+    height: 200px;
+  
+    border-radius: 0 !important;
+    background-size: cover;
+  }
+
+  .App__main .main__request {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .App__main .main__request img {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+  }
+  
+  .App__main .main__story {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2FbackgroundImage.png?alt=media&token=88a7130f-34e8-4088-a99d-541506f4498a");
+    background-size: cover;
+  
+    width: 100%;
+    height: auto;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App__main .main__story .story__top {
+    width: 375px;
+  
+    margin: 0 !important;
+  
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .App__main .main__story .story__top .story__left {
+    width: 330px;
+    height: auto;
+  
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .App__main .main__story .story__top .story__left .left__1 {
+    font-size: 24px !important;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .App__main .main__story .story__top .story__left .left__1 :nth-child(2) {
+    color: #ffcb08;
+  }
+  
+  .App__main .main__story .story__top .story__left .left__2 {
+    font-size: 18px !important;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App__main .main__story .story__top .story__left .left__2 :nth-child(2) {
+    color: #fff !important;
+  }
+
+  .App__main .main__story .story__top .story__right {
+
+    width: 330px !important;
+    height: 170px !important;
+
+    margin: 30px 0 !important;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .App__main .main__story .story__top .story__right img{
+    width: 330px !important;
+    height: 170px !important;
+  
+    background-size: cover;
+  }
+  
+  .App__main .main__story .story__mid {
+   display: none !important;
+  }
+  
+  .App__main .main__story .story__mid .story__mid__1,
+  .story__mid__2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .App__main .main__story .story__mid .story__mid__1 {
+    margin-bottom: 50px;
+  }
+  
+  .App__main .main__story .story__bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0 !important;
+    margin-bottom: 30px !important;
+  
+    width: 330px;
+    height: 40px;
+  
+    border: 1px solid #fff;
+  }
+
+  .App__main .main__RsWrapper {
+    width: 100% !important;
+  }
+  
+  .App__main .main__price {
+    width: 100%;
+    height: 390px !important;
+    margin: 0 !important;
+    color: #222222;
+  }
+
+  .App__main .main__price .price__table {
+    display: none !important;
+  }
+  
+  .App__main .main__price .price__table img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .App__main .main__price .price__bottom {
+   display: none !important;
+  }
+  
+  .App__main .main__price .price__title {
+  display: none !important;
+  }
+  
+  .mid__text {
+    margin-top: 10px;
+  }
+  
+  .table__underTitle {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .media__table {
+    width: 100% !important;
+    height: 390px !important;
+
+    background-color: #ffcb08;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 14px !important;
+
+    color: #fff;
+  }
+
+  .media__table .media__title {
+    font-size: 24px;
+
+    margin-bottom: 30px !important;
+  }
+
+  .media__table .media__top {
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 25px;
+    margin-bottom: 20px;
+
+   
+  }
+
+  .media__table .media__mid {
+    width: 330px !important;
+    height: 100px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #fff;
+    font-weight: 600 !important;
+  }
+
+  .media__mid__top {
+    margin-bottom: 10px !important;
+    margin-right: 30px;
+  }
+
+  .media__desc {
+    margin-left: 10px;
+  }
+
+
+
+  .media__table .media__mid div{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+
+    
+  }
+
+  .media__table .media__mid div :nth-child(2){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-right: 30px;
+  }
+
+
+
+  .media__table .media__bot {
+    width: 330px;
+    height: 40px;
+
+    margin-top: 30px;
+    background-color: #222222;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }

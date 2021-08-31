@@ -52,7 +52,53 @@ const App = () => {
               src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2Fgraph.png?alt=media&token=867d1b23-ed00-4165-91a1-1baf59f90c12`}
             />
           </div>
-          <div className="graph__table"></div>
+          <div className="graph__table">
+            <ul className="table__main">
+                <li className="table__main__li__title1">항목</li>
+                <li className="table__main__li__title2">금액</li>
+                <li className="table__main__li__title3">구성비</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">월매출</li>
+                <li className="table__main__li__2">80,000,000</li>
+                <li className="table__main__li__3">100%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">물류</li>
+                <li className="table__main__li__2">47,200,000</li>
+                <li className="table__main__li__3">59%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">임차료</li>
+                <li className="table__main__li__2">5,000,000</li>
+                <li className="table__main__li__3">6%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">인건비</li>
+                <li className="table__main__li__2">4,500,000</li>
+                <li className="table__main__li__3">6%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">제세공과금</li>
+                <li className="table__main__li__2">1,000,000</li>
+                <li className="table__main__li__3">1%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">기타재</li>
+                <li className="table__main__li__2">3,000,000</li>
+                <li className="table__main__li__3">4%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">영업이익</li>
+                <li className="table__main__li__2">32,800,000</li>
+                <li className="table__main__li__3">최소 41%</li>
+            </ul>         
+            <ul className="table__main">
+                <li className="table__main__li__1">월 순이익</li>
+                <li className="table__main__li__2">19,300,000</li>
+                <li className="table__main__li__3">24%</li>
+            </ul>         
+          </div>
         </div>
       </div>
       <div className="main__banner">
@@ -205,10 +251,14 @@ const App = () => {
                 <div className="desc__title">
                   <img
                     className="desc__img"
-                    src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2FwhyPetMart1_2.png?alt=media&token=e57ba8f6-2756-4600-9861-0ea4d27b8fdd`}
+                    src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%8C%E1%85%A2%E1%84%80%E1%85%A9%20%E1%84%87%E1%85%AE%E1%84%83%E1%85%A1%E1%86%B7%E1%84%8B%E1%85%B2%E1%86%AF%20%E1%84%8C%E1%85%A6%E1%84%85%E1%85%A9.png?alt=media&token=f24f754f-3989-4bb7-80ca-073e8edd97ce`}
                   />
                 </div>
-                <div className="desc__desc"></div>
+                <div className="desc__desc">
+                  <div>체계적이고 안정적인 물류 시스템으로 일주일에</div>
+                  <div>한번씩 본사 직접 배송으로 불필요한 재고를 보유</div>
+                  <div>할 필요 없음</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__2">
@@ -218,8 +268,12 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F5000%E1%84%8B%E1%85%A7%E1%84%80%E1%85%A1%E1%84%8C%E1%85%B5.png?alt=media&token=8ddd90f6-9539-4f54-8cb7-63328e2655a3`}/>
+                </div>
+                <div className="desc__desc">
+                  <div>강아지, 고양이 소동물까지 펫을 위한 마트!</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__3">
@@ -229,8 +283,13 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%89%E1%85%B5%E1%86%AF%E1%84%89%E1%85%A9%E1%86%A8%20%E1%84%8E%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%A5%E1%86%B8.png?alt=media&token=f9e99a34-7e49-475d-85ec-27a68601038b`}/>
+                </div>
+                <div className="desc__desc">
+                  <div>가장 많은 비용을 차지하는 인테이러 비용을 창업</div>
+                  <div>자 직접처리로 창업 비용 절감</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__4">
@@ -240,8 +299,13 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%91%E1%85%A6%E1%86%BA%E1%84%86%E1%85%A1%E1%84%90%E1%85%B3%20%E1%84%89%E1%85%B5%E1%86%AF%E1%84%91%E1%85%A2%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%85%E1%85%B2%E1%86%AF%201.5.png?alt=media&token=1b0414e8-8731-4326-a661-261e5ed6fc4c`} />
+                </div>
+                <div className="desc__desc">
+                <div>코로나로 인해 폐업률이 높은 자영업계에</div>
+                <div>비해 낮은 폐업률을 자랑하는 펫마트!</div>
+                </div>
               </div>
             </div>
           </div>
@@ -266,8 +330,12 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%83%E1%85%A1%E1%84%8B%E1%85%A3%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%84%87%E1%85%A6%E1%86%AB%E1%84%90%E1%85%B3.png?alt=media&token=9acf0ae4-e7bb-4732-a72f-e92db17aa0f2`}/>
+                </div>
+                <div className="desc__desc">
+                <div>월별, 분기별, 시즌에 맞는 이벤트 기획 운영</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__6">
@@ -277,8 +345,13 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%83%E1%85%A1%E1%86%B7%E1%84%83%E1%85%A1%E1%86%BC.png?alt=media&token=a8f00e35-dde0-4d01-b821-484c532d271e`}/>
+                </div>
+                <div className="desc__desc">
+                <div>매장 담당자 지정관리로 빠른 피드백은 물론</div>
+                <div>매장수익분석, 교육 등 컨설팅 가능</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__7">
@@ -288,8 +361,13 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                  <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%8B%E1%85%AF%E1%86%AF%202%E1%84%92%E1%85%AC.png?alt=media&token=b519aefe-2cc3-4d85-8c11-cde1103885f9`}/>
+                </div>
+                <div className="desc__desc">
+                  <div>신상 풍평회를 개최하여</div>
+                  <div>최신 트렌트에 맞는 신상입고</div>
+                </div>
               </div>
             </div>
             <div className="whyPetmart__8">
@@ -299,8 +377,13 @@ const App = () => {
                 />
               </div>
               <div className="petMart__desc">
-                <div className="desc__title"></div>
-                <div className="desc__desc"></div>
+                <div className="desc__title">
+                <img src={`https://firebasestorage.googleapis.com/v0/b/leafsts-fileserver.appspot.com/o/tesk%2F%E1%84%83%E1%85%A1%E1%84%8B%E1%85%A3%E1%86%BC%E1%84%92%E1%85%A1%E1%86%AB%20%E1%84%80%E1%85%AA%E1%86%BC%E1%84%80%E1%85%A9.png?alt=media&token=e5f635e6-823c-4a5b-a284-ab7501a74f39`}/>
+                </div>
+                <div className="desc__desc">
+                <div>TV, 옥외광고 등 브랜딩, 바이럴,</div>
+                <div>신규고객 창출을 위한 마케팅 기획운영</div>
+                </div>
               </div>
             </div>
           </div>

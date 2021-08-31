@@ -74,6 +74,14 @@
   align-items: center;
   justify-content: space-between;
 }
+.table__main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
 
 .App__main .main__graph {
   width: 100%;
@@ -99,6 +107,77 @@
   margin-top: 100px;
 }
 
+.App__main .main__graph .graph__bottom .graph__table{
+  width: 50%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table__main {
+  width: 385px;
+  font-size: 18px;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+}
+.table__main ul :nth-child(2){
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.table__main li{
+  margin: 14px 0;
+  padding: 0 10px;
+}
+.table__main .table__main__li__title1 {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.table__main .table__main__li__title2 {
+  width: 30%;
+
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.table__main .table__main__li__title3 {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.table__main .table__main__li__1 {
+  width: 30%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.table__main .table__main__li__2 {
+  width: 30%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.table__main .table__main__li__3 {
+  width: 30%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 .App__main .main__graph .graph__top,
 .graph__bottom {
   width: 1360px;
@@ -120,14 +199,15 @@
 .graph__title {
   display: flex;
   flex-direction: row;
+
 }
 
 .App__main .main__graph .graph__top .graph__bigTitle,
 .graph__title .title__bar {
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
-.App__main .main__graph .graph__top .graph__bigTitle,
+/* .App__main .main__graph .graph__top .graph__bigTitle,
 .graph__title .title__bar ::before {
   position: absolute;
   width: 10%;
@@ -135,15 +215,15 @@
   content: "";
 
   background-color: #ffcb08;
-}
+} */
 
 .App__main .main__graph .graph__top .graph__bigTitle {
   width: 50%;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 /* .App__main
@@ -297,14 +377,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.whyPetMart__title ::before{
+  position: absolute;
+  background-color: #ffcb08;
+}
 .App__main
   .main__RsWrapper
   .main__whyPetmart
   .whyPetMart__title
   .whyPetMart__title__desc {
-  font-size: 24px;
-
-  margin-bottom: 100px;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .App__main .main__RsWrapper .main__whyPetmart .whyPetMart__title div {
@@ -317,14 +402,15 @@
   align-items: center;
   justify-content: space-between;
 }
-.App__main .main__RsWrapper .main__whyPetmart .sticker__Area {
+.App__main .main__RsWrapper .main__whyPetmart .sticker__Area div{
   width: 100%;
-
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
+
+
 
 .petMart__desc {
   font-size: 18px;
@@ -333,24 +419,40 @@
   line-height: 20px;
 }
 
-.petMart__descArea {
-  width: 50%;
+.petMart__desc .desc__title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 
+  margin: 20px 0;
+}
+
+.petMart__desc .desc__desc div{
+  font-size: 16px;
+
+  line-height: 30px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+ .petmart__imgs {
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
-.petMart__descArea div {
-  margin-top: 10px;
-}
 .petmart__imgs img {
   width: 300px;
   height: 300px;
 
   border-radius: 50%;
   background-size: cover;
+
+
 }
 
 /* .App__main .main__RsWrapper .main__whyPetMart .petMart__images {
@@ -509,6 +611,7 @@
   justify-content: center;
 
   font-size: 48px;
+  margin-bottom: 50px;
 }
 
 .mid__text {

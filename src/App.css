@@ -590,6 +590,14 @@
   height: 60px;
 
   border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.story__bottom:hover {
+  border: 1px solid #222222;
+  color: #222222;
+
+  background-color: #eeeeee;
 }
 
 .App__main .main__price {
@@ -1477,5 +1485,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    transition: 0.5s;
+  }
+
+  .media__table .media__bot:hover {
+    background-color: #eeeeee;
+    color: #222222;
+    border: 1px solid #222222;
   }
 }
